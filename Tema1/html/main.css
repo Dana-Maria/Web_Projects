@@ -1,0 +1,181 @@
+*{
+
+        padding:0px;
+        margin:0px;
+
+    }
+
+@font-face {
+    font-family: myFirstFont;
+    src: url("Sanchezregular.otf");
+}
+
+body{
+
+      background: url("poza4.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      overflow: auto;
+
+    }
+
+#header
+    {
+      z-index: 9999;
+      position: relative;
+      margin: auto;
+      width: 100%;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #ff6666;/*#002e4d;* /*#004d3d;*/
+    }
+
+ol {
+    margin-left: 3%;
+    font-family: myFirstFont;
+    text-align: justify;
+}
+
+
+
+ ul{
+
+ 	  font-family: myFirstFont;
+ 	  list-style: none;
+   	  margin: 0;
+      padding: 0;
+      overflow: hidden;
+ }
+/* Meniu */
+.nav li a {
+
+	background-color: #ff6666; /*#002e4d;*/ /*#004d3d;*/
+	color:#ffffff;
+	text-decoration:none;
+	padding:10px 15px;
+	display:block;
+}
+
+.nav li a:hover{
+
+  background-color: #990000/*#0099cc*//*#00b38f*/;
+  color: #ffffff;
+}
+
+.nav > li{
+
+	float: right;
+
+}
+.nav li ul{
+
+	display:none;
+	position:absolute;
+	min-width:140px;
+}
+
+.nav li:hover > ul{display: block;}
+.nav li ul li 
+{
+
+		position: relative;
+
+  }
+/* Meniu */
+
+.article, .backc{
+
+  background: rgba(255,255,255, 50%);
+  position: absolute;
+  left: 16%;
+  width: 900px;
+  height: auto;
+  text-align: center;
+
+}
+
+.article a 
+{
+	color: black;
+	
+}
+/* Galerie */
+.container
+{
+
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  margin:auto;
+  font-family: myFirstFont;
+  
+
+}
+
+.galerie
+{
+
+  width: 190px;
+  margin-top: 20px;
+  height: 250px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  filter: brightness(70%);
+  cursor: pointer;
+}
+
+.galerie
+{
+  transition: transform .5s;
+}
+.galerie:hover
+{
+  filter: brightness(100%);
+  transform: scale(1.15);
+  z-index: 7777;
+
+}
+/*Galerie*/
+h1, h2, h3, h4, h5, h6{font-family: myFirstFont;}
+/* Tabel */
+.table, th, td
+{
+  width: : 80%;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  margin-right: 150px;
+  margin-left: 150px;
+  font-family: myFirstFont;
+  border: 0.5px solid white;
+  border-collapse: collapse;
+  text-align: center;
+  font-size: 1em;
+  background:  #ff5050;
+  opacity: 0.9;
+  color: #330000;
+  margin-top: 40px;
+  
+}
+
+th, td
+{
+  padding: 5px;
+  opacity:0.9;
+}
+
+.table td:nth-of-type(2n+1){
+  background-color: #ffcccc;
+}
+.table td:nth-of-type(2n){
+  background-color: #ff9999;
+}
+/* Tabel */
+
+ol img {
+	margin-left: 20px;
+	margin-right: 10px;
+	float: right;
+	width:300px;
+	height:200px;
+}
